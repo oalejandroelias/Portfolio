@@ -8,8 +8,12 @@ import Table_ from './Components/Table_'
 import Wrap_ from './Components/Wrap_'
 import NavBar from './Components/NavBar'
 import Body1 from './Components/Body1'
+import {createRoot} from 'react-dom/client';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement!);
+
+root.render(
   <React.StrictMode>
     <ChakraProvider 
     theme={theme}>
