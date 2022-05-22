@@ -1,4 +1,4 @@
-import { useClipboard, Flex } from '@chakra-ui/react'
+import { useClipboard, Flex, Input, Button, Editable, EditablePreview, EditableInput } from '@chakra-ui/react'
 import React from 'react'
 
 
@@ -7,7 +7,7 @@ function Example() {
     const { hasCopied, onCopy } = useClipboard(value)
   
     return (
-      <di>
+      <div>
         <Flex mb={2}>
           <Input value={value} isReadOnly placeholder='Welcome' />
           <Button onClick={onCopy} ml={2}>
@@ -18,6 +18,6 @@ function Example() {
           <EditablePreview width='100%' />
           <EditableInput />
         </Editable>
-      </di>
+      </div>
     )
   }
