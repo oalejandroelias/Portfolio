@@ -9,6 +9,7 @@ import Wrap_ from './Components/Wrap_'
 import NavBar from './Components/NavBar'
 import Body1 from './Components/Body1'
 import {createRoot} from 'react-dom/client';
+import Carousel_ from './Components/Carousel_'
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement!);
@@ -20,6 +21,7 @@ root.render(
       <ColorModeScript initialColorMode='dark'></ColorModeScript>
       <NavBar></NavBar>
       <Body1></Body1>
+      {/* <Carousel_></Carousel_> */}
       <App />
       {/* <Wrap_></Wrap_> */}
       

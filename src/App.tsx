@@ -102,26 +102,42 @@ function App() {
                 transform={'rotate(10deg)'}>
                 Openlayers
               </Text>
-            </Box>
-            <Box>
               <Icon
                
-                color={useColorModeValue('gray.800', 'gray.300')}
-                w={71}
-                position={'absolute'}
-                right={-71}
-                top={'10px'}
-              />
-              <Text
-                fontSize={'lg'}
-                fontFamily={'Caveat'}
-                position={'absolute'}
-                right={'-125px'}
-                top={'-15px'}
-                transform={'rotate(20deg)'}>
-                Geoserver
-              </Text>
+               color={useColorModeValue('gray.800', 'gray.300')}
+               w={71}
+               position={'absolute'}
+               right={-71}
+               top={'10px'}
+             />
+             <Text
+               fontSize={'lg'}
+               fontFamily={'Caveat'}
+               position={'absolute'}
+               right={'-125px'}
+               top={'-15px'}
+               transform={'rotate(20deg)'}>
+               Geoserver
+             </Text>
+             <Icon
+               
+               color={useColorModeValue('gray.800', 'gray.300')}
+               w={71}
+               position={'absolute'}
+               right={-71}
+               top={'10px'}
+             />
+             <Text
+               fontSize={'lg'}
+               fontFamily={'Caveat'}
+               position={'absolute'}
+               right={'25px'}
+               top={'15px'}
+               transform={'rotate(10deg)'}>
+               Postgis
+             </Text>
             </Box>
+          
           </Stack>
         </Stack>
       </Container>
