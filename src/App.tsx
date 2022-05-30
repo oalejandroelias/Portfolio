@@ -8,6 +8,7 @@ import {
   Container,
   Text,
   Button,
+  Image,
   Stack,
   Icon,
   useColorModeValue,
@@ -20,27 +21,7 @@ import {
   EditableInput
 } from '@chakra-ui/react';
 import NavBar from './Components/NavBar';
-
-
-function Example() {
-  const [value, setValue] = React.useState('Hello world')
-  const { hasCopied, onCopy } = useClipboard(value)
-
-  return (
-    <>
-      <Flex mb={2}>
-        <Input value={value} isReadOnly placeholder='Welcome' />
-        <Button onClick={onCopy} ml={2}>
-          {hasCopied ? 'Copied' : 'Copy'}
-        </Button>
-      </Flex>
-      <Editable placeholder='Paste here'>
-        <EditablePreview width='100%' />
-        <EditableInput />
-      </Editable>
-    </>
-  )
-}
+import imagen from './img/icon_gis.png'
 
 function App() {
  
@@ -57,14 +38,20 @@ function App() {
             fontWeight={600}
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}>
-            Alejandro<br />
+            Sistemas de<br />
             <Text as={'span'} color={'green.400'}>
-              Elias
+              Información Geográfica
             </Text>
           </Heading>
           <Text color={'gray.500'}>
             Desarrollador Web
           </Text>
+          <Image
+                rounded={'md'}
+                alt={'feature image'}
+                src={imagen}
+                objectFit={'cover'}
+              />
           <Stack
             direction={'column'}
             spacing={3}
@@ -84,59 +71,7 @@ function App() {
             {/* <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
               Learn more
             </Button> */}
-            <Box>
-              <Icon
-               
-                color={useColorModeValue('gray.800', 'gray.300')}
-                w={71}
-                position={'absolute'}
-                right={-71}
-                top={'10px'}
-              />
-              <Text
-                fontSize={'lg'}
-                fontFamily={'Caveat'}
-                position={'absolute'}
-                right={'125px'}
-                top={'-15px'}
-                transform={'rotate(10deg)'}>
-                Openlayers
-              </Text>
-              <Icon
-               
-               color={useColorModeValue('gray.800', 'gray.300')}
-               w={71}
-               position={'absolute'}
-               right={-71}
-               top={'10px'}
-             />
-             <Text
-               fontSize={'lg'}
-               fontFamily={'Caveat'}
-               position={'absolute'}
-               right={'-125px'}
-               top={'-15px'}
-               transform={'rotate(20deg)'}>
-               Geoserver
-             </Text>
-             <Icon
-               
-               color={useColorModeValue('gray.800', 'gray.300')}
-               w={71}
-               position={'absolute'}
-               right={-71}
-               top={'10px'}
-             />
-             <Text
-               fontSize={'lg'}
-               fontFamily={'Caveat'}
-               position={'absolute'}
-               right={'25px'}
-               top={'15px'}
-               transform={'rotate(10deg)'}>
-               Postgis
-             </Text>
-            </Box>
+         
           
           </Stack>
         </Stack>

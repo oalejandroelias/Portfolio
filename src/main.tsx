@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChakraProvider, ColorModeScript } from '@chakra-ui/react'
+import { ChakraProvider, ColorModeScript, Link } from '@chakra-ui/react'
 import * as ReactDOM from 'react-dom/client'
 import App from './App'
 import theme from './theme'
@@ -10,6 +10,8 @@ import NavBar from './Components/NavBar'
 import Body1 from './Components/Body1'
 import {createRoot} from 'react-dom/client';
 import Carousel_ from './Components/Carousel_'
+import Presentacion1 from './Components/Presentacion1'
+
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement!);
@@ -20,7 +22,8 @@ root.render(
     theme={theme}>
       <ColorModeScript initialColorMode='dark'></ColorModeScript>
       <NavBar></NavBar>
-      <Body1></Body1>
+      <Presentacion1></Presentacion1>
+      {/* <Body1></Body1> */}
       {/* <Carousel_></Carousel_> */}
       <App />
       {/* <Wrap_></Wrap_> */}
